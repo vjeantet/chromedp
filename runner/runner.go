@@ -455,3 +455,10 @@ func ProcessOpt(o func(*os.Process) error) CommandLineOption {
 		return nil
 	}
 }
+
+// Kill send a SIGKILL signal to process
+func (r *Runner) Kill() {
+	if r.cmd != nil && r.cmd.Process != nil {
+		r.cmd.Process.Signal(syscall.SIGKILL)
+	}
+}

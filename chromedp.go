@@ -421,3 +421,10 @@ var (
 	// testing.
 	defaultNewTargetTimeout = DefaultNewTargetTimeout
 )
+
+// Kill running process
+func (c *CDP) Kill() {
+	c.RLock()
+	defer c.RUnlock()
+	c.r.Kill()
+}
