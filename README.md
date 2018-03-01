@@ -37,7 +37,7 @@ import (
 	"time"
 
 	"github.com/chromedp/cdproto/cdp"
-	"github.com/chromedp/chromedp"
+	"github.com/vjeantet/chromedp"
 )
 
 func main() {

@@ -21,7 +21,7 @@ import (
 	"github.com/chromedp/cdproto/page"
 	"github.com/chromedp/cdproto/runtime"
 
-	"github.com/chromedp/chromedp/client"
+	"github.com/vjeantet/chromedp/client"
 )
 
 // TargetHandler manages a Chrome Debugging Protocol target.
